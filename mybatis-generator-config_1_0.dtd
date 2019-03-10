@@ -134,14 +134,6 @@
   targetProject CDATA #REQUIRED>
 
 <!--
-custom javaServiceGenerator
--->
-<!ELEMENT javaServiceGenerator (property*)>
-<!ATTLIST javaServiceGenerator
-  targetPackage CDATA #REQUIRED
-  targetProject CDATA #REQUIRED>
-
-<!--
   The javaClientGenerator element is used to define properties of the Java client Generator.
   The Java Client Generator builds Java interface and implementation classes
   (as required) for each table.
@@ -153,6 +145,14 @@ custom javaServiceGenerator
   targetPackage CDATA #REQUIRED
   targetProject CDATA #REQUIRED
   implementationPackage CDATA #IMPLIED>
+
+<!--
+custom javaServiceGenerator
+-->
+<!ELEMENT javaServiceGenerator (property*)>
+<!ATTLIST javaServiceGenerator
+  targetPackage CDATA #REQUIRED
+  targetProject CDATA #REQUIRED>
 
 <!--
   The table element is used to specify a database table that will be the source information
